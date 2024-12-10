@@ -79,7 +79,7 @@ If you find this work helps your research, please consider citing our [paper](ht
 Gou, J.; Ji, L.; Liu, P.; and Ye, M. 2025. Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification. In *Proceedings of the AAAI Conference on Artificial Intelligence*.
 
 ```txt
-@inproceedings{gou2024queryable,
+@inproceedings{gou2025queryable,
   title={Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification},
   author={Gou, Jiaxiang and Ji, Luping and Liu, Pei and Ye, Mao},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
