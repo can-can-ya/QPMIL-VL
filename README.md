@@ -49,7 +49,7 @@ Detailed package requirements:
 
 ### 4. Training Models
 
-All important arguments are explained in `configs/main.yaml`. **You could replace the values of `dataset_root_dir` and `conch_ckpt_path` with <u>the root directory of dataset</u> and <u>the path of CONCH pre-trained weight</u> respectively.**
+All important arguments are explained in `configs/main.yaml`. **You could replace the values of `dataset_root_dir` and `conch_ckpt_path` with *the root directory of dataset* and *the path of CONCH pre-trained weight* respectively.**
 
 Finally, in the project directory `scripts/`, execute the following command (*ten-fold cross-validation*):
 
