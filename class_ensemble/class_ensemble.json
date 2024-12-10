@@ -1,0 +1,85 @@
+{
+    "0": {
+        "_comment": "adapted from CONCH: https://github.com/mahmoodlab/CONCH",
+        "classnames": {
+            "tcga_lung": {
+                "LUAD": [
+                    "lung adenocarcinoma",
+                    "adenocarcinoma of the lung",
+                    "LUAD"
+                ],
+                "LUSC": [
+                    "lung squamous cell carcinoma",
+                    "squamous cell carcinoma of the lung",
+                    "LUSC"
+                ]
+            },
+            "tcga_brca": {
+                "IDC": [
+                    "invasive ductal carcinoma",
+                    "breast invasive ductal carcinoma",
+                    "invasive ductal carcinoma of the breast",
+                    "invasive carcinoma of the breast, ductal pattern",
+                    "breast IDC"
+                ],
+                "ILC": [
+                    "invasive lobular carcinoma",
+                    "breast invasive lobular carcinoma",
+                    "invasive lobular carcinoma of the breast",
+                    "invasive carcinoma of the breast, lobular pattern",
+                    "breast ILC"
+                ]
+            },
+            "tcga_rcc": {
+                "CCRCC": [
+                    "clear cell renal cell carcinoma",
+                    "renal cell carcinoma, clear cell type",
+                    "renal cell carcinoma of the clear cell type",
+                    "clear cell RCC"
+                ],
+                "PRCC": [
+                    "papillary renal cell carcinoma",
+                    "renal cell carcinoma, papillary type",
+                    "renal cell carcinoma of the papillary type",
+                    "papillary RCC"
+                ]
+            },
+            "tcga_esca": {
+                "ESAD": [
+                    "esophageal adenocarcinoma",
+                    "adenocarcinoma of the esophageal",
+                    "ESAD"
+                ],
+                "ESCC": [
+                    "esophageal squamous cell carcinoma",
+                    "squamous cell carcinoma of the esophageal",
+                    "ESCC"
+                ]
+            }
+        },
+        "templates": [
+            "CLASSNAME",
+            "a photomicrograph showing CLASSNAME",
+            "a photomicrograph of CLASSNAME",
+            "an image of CLASSNAME",
+            "an image showing CLASSNAME",
+            "an example of CLASSNAME",
+            "CLASSNAME is shown",
+            "this is CLASSNAME",
+            "there is CLASSNAME",
+            "a histopathological image showing CLASSNAME",
+            "a histopathological image of CLASSNAME",
+            "a histopathological photograph of CLASSNAME",
+            "a histopathological photograph showing CLASSNAME",
+            "shows CLASSNAME",
+            "presence of CLASSNAME",
+            "CLASSNAME is present",
+            "an H&E stained image of CLASSNAME",
+            "an H&E stained image showing CLASSNAME",
+            "an H&E image showing CLASSNAME",
+            "an H&E image of CLASSNAME",
+            "CLASSNAME, H&E stain",
+            "CLASSNAME, H&E"
+        ]
+    }
+}

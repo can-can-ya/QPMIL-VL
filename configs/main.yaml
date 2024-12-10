@@ -1,0 +1,78 @@
+# training setting
+cuda_id: 0 # which gpu to use
+loss_function: cross_entropy # the loss function
+result_dir: results # directory to save results when train
+task_num: 0 # task num
+epochs: [12, 12, 12, 12] # the number of train epoch for each dataset
+bp_every_batch: 16 # mini-batch when train
+eval_every_batch: 1 # mini-batch when evaluate
+pooling: max # What pooling is used to get query vector [mean, max]
+only_val_loss: False # Whether to use only the loss metric on the validation set to monitor the learning process, otherwise, use both loss and acc metrics.
+load_best_ckpt: False # if load best model weight checkpoint after train one task
+
+check_forgetting_process: True # if check forgetting process
+check_key_matching: True # if check key matching frequency
+print_mb_key_matching: False # if print mini-batch key matching frequency
+check_feature: True # if check the feature distribution of image and text
+
+
+# dataset
+dataset_names: [tcga_lung, tcga_brca, tcga_rcc, tcga_esca] # forward-order: lung (NSCLC) -> brca (BRCA) -> rcc (RCC) -> esca (ESCA)
+dataset_label_shift: [0, 2, 4, 6] # The initial labels of the two subtypes of each dataset are 0 and 1.
+dataset_subtype_num: [2, 2, 2, 2] # Number of subtypes in each dataset
+dataset_root_dir: /home/gjx/can_dataset # the root directory of dataset
+path_split: /{}/datasplit/fold_{}.npz # the path of data split
+path_feat: /{}/feats-l1-s256_{}/pt_files # the dir path of feat
+path_table: /{}/table/{}_path_subtype_x10_processed.csv # the path of table
+class_ensemble_path: class_ensemble/class_ensemble.json # the path of class ensemble (adapted from CONCH: https://github.com/mahmoodlab/CONCH)
+feat_format: pt # instance features format
+batch_size: 1 # Can only be 1.
+num_workers: 4 # set 0 for debug, default: 4
+total_fold: 10 # total fold number
+
+
+# model
+base_model_arch: CONCH # base model's architecture [CONCH, ]
+csm_logit_scale: 100 # Cosine similarity matrix logit scale (set default in TOP: https://github.com/miccaiif/TOP)
+alpha: 0.5 # the amplitude factor of tunable vector (set default in TaskRes: https://github.com/geekyutao/TaskRes)
+lambda: 0.5 # the weight of matching loss (set default value)
+beta: 0.5 # the weight of class similarity loss (set default value)
+max_norm: 1 # gradient norm (if None, no clipping)
+
+# CONCH
+conch_ckpt_path: /home/gjx/can_pretrained-model/conch/pytorch_model.bin # path of model weight
+conch_path_feat: CONCH # to fill the path of feat
+
+# prototype pool (key, prompt) (***Validation set hyperparameter tuning***)
+pool_size: 20 # M: size of prototype pool
+prompt_length: 24 # L_P: length of each prompt
+match_size: 5 # N: size of matching keys
+
+# optimizer
+opt_name: adam # use which optimizer to train the network
+
+adam_lr: 0.001 # adam learning rate
+adam_eps: 0.00000001 # adam eps
+adam_weight_decay: 0.0005 # adam weight decay
+
+# lr_scheduler
+lrs_name: ReduceLROnPlateau # the name of lr scheduler
+lrs_factor: 0.5 # the factor of lr scheduler
+lrs_patience: [3, 3, 3, 3] # the patience of lr scheduler
+lrs_threshold: 0.0001 # the threshold of lr scheduler
+lrs_warmup: 0 # the warm up of lr scheduler (note: Let the new task learn the right key)
+lrs_mode: min # the mode of lr scheduler
+lrs_threshold_mode: rel # the threshold mode of lr scheduler
+lrs_verbose: True # the verbose of lr scheduler
+
+# early_stop
+es_patience: [5, 5, 5, 5] # Early stopping patience
+es_warmup: 0 # Early stopping warm up (note: Let the new task learn the right key)
+es_threshold: 0.0001 # Early stopping threshold
+es_verbose: True # Early stopping verbose
+
+
+# evaluator
+b_metrics_list: [auc, loss, acc, acc_best, acc@mid, recall, precision, f1_score, f1_score@mid, ece, mce] # metrics that need to be reported when doing binary classification
+m_metrics_list: [loss, acc, macro_f1_score, micro_f1_score] # metrics that need to be reported when doing multi-classification (note: can't calculate auc: ValueError: Number of classes in y_true not equal to the number of columns in 'y_score')
+eval_template_path: eval_template/forward-order.xlsx # the path of evaluate template
