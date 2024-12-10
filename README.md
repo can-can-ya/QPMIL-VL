@@ -76,20 +76,20 @@ Some parts of codes in this repo are adapted from the following amazing works. W
 
 If you find this work helps your research, please consider citing our [paper](https://arxiv.org/abs/2410.10573):
 
-Gou, J.; Ji, L.; Liu, P.; and Ye, M. 2024. Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification. arXiv preprint arXiv:2410.10573.
+Gou, J.; Ji, L.; Liu, P.; and Ye, M. 2025. Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification. In *Proceedings of the AAAI Conference on Artificial Intelligence*.
 
 ```txt
-@article{gou2024queryable,
+@inproceedings{gou2024queryable,
   title={Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification},
   author={Gou, Jiaxiang and Ji, Luping and Liu, Pei and Ye, Mao},
-  journal={arXiv preprint arXiv:2410.10573},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025}
 }
 ```
 
 Additionally, our another work, for the first time, proposes a new *Vision-Language-based Survival Analysis* (VLSA) paradigm. If you find VLSA useful, please refer to the [code](https://github.com/liupei101/VLSA) and also consider citing the corresponding [paper](https://arxiv.org/abs/2409.09369):
 
-Liu, P.; Ji, L.; Gou, J.; Fu, B.; and Ye, M. 2024. Interpretable Vision-Language Survival Analysis with Ordinal Inductive Bias for Computational Pathology. arXiv preprint arXiv:2409.09369.
+Liu, P.; Ji, L.; Gou, J.; Fu, B.; and Ye, M. 2024. Interpretable Vision-Language Survival Analysis with Ordinal Inductive Bias for Computational Pathology. *arXiv preprint arXiv:2409.09369*.
 
 ```txt
 @article{liu2024interpretable,
