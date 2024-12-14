@@ -19,7 +19,7 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
 ### 📚 Recent Updates
 
-- **12/10/2024**: Code & [paper](https://arxiv.org/abs/2410.10573) are live.
+- **12/10/2024**: Code & [paper](https://arxiv.org/abs/2410.10573) (containing **Supplementary Material**) are live.
 
 *On updating. Stay tuned.*
 
