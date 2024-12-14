@@ -59,6 +59,8 @@ Finally, in the project directory `scripts/`, execute the following command (*te
 
 ## 🌈 Acknowledgements
 
+This work is supported by the National Natural Science Foundation of China (NSFC) under Grant No.62476049.
+
 Some parts of codes in this repo are adapted from the following amazing works. We thank the authors and developers for their selfless contributions. 
 
 - [Luping Ji](https://faculty.uestc.edu.cn/jiluping/zh_CN/index.htm), [Pei Liu](https://liupei101.github.io): Provide detailed guidance.
