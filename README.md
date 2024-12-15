@@ -19,7 +19,7 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
 ### 📚 Recent Updates
 
-- **12/15/2024**: Provide a [download link](https://pan.baidu.com/s/18CXQeEcS-nFMEo9Y65-Nyg?pwd=2c5j) for the CONCH pre-trained weight that does **not require authorization**. Update our prepared [dataset](https://pan.baidu.com/s/1DB83xR7HBw4eS9WxlRJN6g?pwd=4yri) to facilitate direct **online viewing of the dataset's file organization** and allow for **on-demand downloading of specific files**.
+- **12/15/2024**: Update our prepared [dataset](https://pan.baidu.com/s/1DB83xR7HBw4eS9WxlRJN6g?pwd=4yri) to facilitate direct **online viewing of the dataset's file organization** and allow for **on-demand downloading of specific files**.
 - **12/10/2024**: Code & [paper](https://arxiv.org/abs/2410.10573) (containing **Supplementary Material**) are live.
 
 *On updating. Stay tuned.*
@@ -29,8 +29,6 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 ### 1. CONCH Pre-trained Weight
 
 First of all, you could download the pre-trained weight of pathology VLM CONCH [here](https://huggingface.co/MahmoodLab/CONCH/tree/main) (official link).
-
-**Alternatively, you could also download it [here](https://pan.baidu.com/s/18CXQeEcS-nFMEo9Y65-Nyg?pwd=2c5j) (no authorization required).**
 
 ### 2. WSI Preprocessing
 
