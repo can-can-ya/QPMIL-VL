@@ -5,7 +5,7 @@ QPMIL-VL ✨ <a href="https://www.scse.uestc.edu.cn/"> <img width="20%" src="./d
 
 Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
-[[Paper]](https://arxiv.org/abs/2410.10573) | [[Running the Code]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-running-the-code) | [[Acknowledgements]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-acknowledgements) | [[License and Terms of Use]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-license-and-terms-of-use) | [[Citation]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-citation)
+[[Paper]](https://arxiv.org/abs/2410.10573) | [[Running the Code]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-running-the-code) | [[Acknowledgments]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-acknowledgments) | [[License and Terms of Use]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-license-and-terms-of-use) | [[Citation]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-citation)
 
 **Abstract**: Whole Slide Image (WSI) classification has very significant applications in clinical pathology, *e.g.*, tumor identification and cancer diagnosis. Currently, most research attention is focused on Multiple Instance Learning (MIL) using *static* datasets. One of the most obvious weaknesses of these methods is that they cannot efficiently preserve and utilize previously learned knowledge. With any new data arriving, classification models are required to be re-trained on both previous and current new data. To overcome this shortcoming and break through traditional vision modality, this paper proposes the first *Vision-Language*-based framework with *Queryable Prototype Multiple Instance Learning* (QPMIL-VL) specially designed for incremental WSI classification. This framework mainly consists of two information processing branches: one is for generating bag-level features by prototype-guided aggregation of instance features, while the other is for enhancing class features through a combination of class ensemble, tunable vector and class similarity loss. The experiments on four public WSI datasets demonstrate that our QPMIL-VL framework is effective for incremental WSI classification and often significantly outperforms other compared methods, achieving state-of-the-art (SOTA) performance.
 
@@ -19,6 +19,7 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
 ### 📚 Recent Updates
 
+- **12/15/2024**: Provide a [download link](https://pan.baidu.com/s/18CXQeEcS-nFMEo9Y65-Nyg?pwd=2c5j) for the CONCH pre-trained weight that does **not require authorization**. Update our prepared [dataset](https://pan.baidu.com/s/1DB83xR7HBw4eS9WxlRJN6g?pwd=4yri) to facilitate direct **online viewing of the dataset's file organization** and allow for **on-demand downloading of specific files**.
 - **12/10/2024**: Code & [paper](https://arxiv.org/abs/2410.10573) (containing **Supplementary Material**) are live.
 
 *On updating. Stay tuned.*
@@ -27,13 +28,15 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
 ### 1. CONCH Pre-trained Weight
 
-First of all, you could download the pre-trained weight of pathology VLM CONCH [here](https://huggingface.co/MahmoodLab/CONCH/tree/main).
+First of all, you could download the pre-trained weight of pathology VLM CONCH [here](https://huggingface.co/MahmoodLab/CONCH/tree/main) (official link).
+
+**Alternatively, you could also download it [here](https://pan.baidu.com/s/18CXQeEcS-nFMEo9Y65-Nyg?pwd=2c5j) (no authorization required).**
 
 ### 2. WSI Preprocessing
 
 We use [CLAM](https://github.com/mahmoodlab/CLAM) to crop non-overlapping `256 × 256` patches from the segmented tissue at `10×` magnification. Then, pre-trained image encoder in [CONCH](https://github.com/mahmoodlab/CONCH) is used to extract instance features. You could move to [Pipeline-Processing-TCGA-Slides-for-MIL](https://github.com/liupei101/Pipeline-Processing-TCGA-Slides-for-MIL) for a detailed tutorial.
 
-**Of course, you could also use the [dataset](https://pan.baidu.com/s/15ZxpXI2zqVuBb7gsqv_DTA?pwd=gd30) we prepared directly.**
+**Of course, you could also use the [dataset](https://pan.baidu.com/s/1DB83xR7HBw4eS9WxlRJN6g?pwd=4yri) we prepared directly (corresponding compressed file is [here](https://pan.baidu.com/s/15ZxpXI2zqVuBb7gsqv_DTA?pwd=gd30)).**
 
 ### 3. Running Environment
 
@@ -57,9 +60,9 @@ Finally, in the project directory `scripts/`, execute the following command (*te
 ./main.sh
 ```
 
-## 🌈 Acknowledgements
+## 🌈 Acknowledgments
 
-This work is supported by the National Natural Science Foundation of China (NSFC) under Grant No.62476049.
+This work is supported by **the National Natural Science Foundation of China (NSFC) under Grant No.62476049**.
 
 Some parts of codes in this repo are adapted from the following amazing works. We thank the authors and developers for their selfless contributions. 
 
