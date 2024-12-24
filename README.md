@@ -11,7 +11,7 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
 <div align="center">
   <a href="https://arxiv.org/pdf/2410.10573">
-    <img width="100%" height="auto" src="./docs/QPMIL-VL.png" />
+    <img width="80%" height="auto" src="./docs/QPMIL-VL.png" />
   </a>
 </div>
 
