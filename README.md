@@ -5,7 +5,7 @@ QPMIL-VL ✨ <a href="https://www.scse.uestc.edu.cn/"> <img width="20%" src="./d
 
 Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
-[[Paper]](https://arxiv.org/abs/2410.10573) | [[Running the Code]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-running-the-code) | [[Acknowledgments]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-acknowledgments) | [[License and Terms of Use]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-license-and-terms-of-use) | [[Citation]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-citation)
+[[Paper]](https://arxiv.org/abs/2410.10573) | [[Recent News]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-recent-news) | [[Running the Code]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-running-the-code) | [[Acknowledgments]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-acknowledgments) | [[License and Terms of Use]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-license-and-terms-of-use) | [[Citation]](https://github.com/can-can-ya/QPMIL-VL?tab=readme-ov-file#-citation)
 
 **Abstract**: Whole Slide Image (WSI) classification has very significant applications in clinical pathology, *e.g.*, tumor identification and cancer diagnosis. Currently, most research attention is focused on Multiple Instance Learning (MIL) using *static* datasets. One of the most obvious weaknesses of these methods is that they cannot efficiently preserve and utilize previously learned knowledge. With any new data arriving, classification models are required to be re-trained on both previous and current new data. To overcome this shortcoming and break through traditional vision modality, this paper proposes the first *Vision-Language*-based framework with *Queryable Prototype Multiple Instance Learning* (QPMIL-VL) specially designed for incremental WSI classification. This framework mainly consists of two information processing branches: one is for generating bag-level features by prototype-guided aggregation of instance features, while the other is for enhancing class features through a combination of class ensemble, tunable vector and class similarity loss. The experiments on four public WSI datasets demonstrate that our QPMIL-VL framework is effective for incremental WSI classification and often significantly outperforms other compared methods, achieving state-of-the-art (SOTA) performance.
 
@@ -17,10 +17,11 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
 ---
 
-### 📚 Recent Updates
+## 📚 Recent News
 
+- **01/23/2025**: 🎉 One co-authored paper, VLSA, is accepted by *[ICLR 2025](https://openreview.net/forum?id=trj2Jq8riA)*. Refer to its [code](https://github.com/liupei101/VLSA) & [paper](https://arxiv.org/abs/2409.09369) for more details. Congratulations to [Pei Liu](https://liupei101.github.io).
 - **12/15/2024**: Update our prepared [dataset](https://pan.baidu.com/s/1DB83xR7HBw4eS9WxlRJN6g?pwd=4yri) to facilitate direct **online viewing of the dataset's file organization** and allow for **on-demand downloading of specific files**.
-- **12/10/2024**: Code & [paper](https://arxiv.org/abs/2410.10573) (containing **Supplementary Material**) are live.
+- **12/10/2024**: 🥳 Our QPMIL-VL is accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)* and its [code](https://github.com/can-can-ya/QPMIL-VL) & [paper](https://arxiv.org/abs/2410.10573) (containing **Supplementary Material**) are live.
 
 *On updating. Stay tuned.*
 
@@ -79,26 +80,24 @@ Some parts of codes in this repo are adapted from the following amazing works. W
 
 If you find this work helps your research, please consider citing our [paper](https://arxiv.org/abs/2410.10573):
 
-Gou, J.; Ji, L.; Liu, P.; and Ye, M. 2025. Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification. In *Proceedings of the AAAI Conference on Artificial Intelligence*.
-
 ```txt
 @inproceedings{gou2025queryable,
   title={Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification},
   author={Gou, Jiaxiang and Ji, Luping and Liu, Pei and Ye, Mao},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2025}
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  year={2025},
+  url={https://arxiv.org/abs/2410.10573}
 }
 ```
 
-Additionally, our another work, for the first time, proposes a new *Vision-Language-based Survival Analysis* (VLSA) paradigm. If you find VLSA useful, please refer to the [code](https://github.com/liupei101/VLSA) and also consider citing the corresponding [paper](https://arxiv.org/abs/2409.09369):
-
-Liu, P.; Ji, L.; Gou, J.; Fu, B.; and Ye, M. 2024. Interpretable Vision-Language Survival Analysis with Ordinal Inductive Bias for Computational Pathology. *arXiv preprint arXiv:2409.09369*.
+Additionally, our another work, for the first time, proposes a new *Vision-Language-based Survival Analysis* (VLSA) paradigm. If you find VLSA useful, please also consider citing the corresponding [paper](https://arxiv.org/abs/2409.09369):
 
 ```txt
-@article{liu2024interpretable,
+@inproceedings{liu2025interpretable,
   title={Interpretable Vision-Language Survival Analysis with Ordinal Inductive Bias for Computational Pathology},
   author={Liu, Pei and Ji, Luping and Gou, Jiaxiang and Fu, Bo and Ye, Mao},
-  journal={arXiv preprint arXiv:2409.09369},
-  year={2024}
+  booktitle={International conference on learning representations},
+  year={2025},
+  url={https://arxiv.org/abs/2409.09369}
 }
 ```
