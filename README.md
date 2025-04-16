@@ -19,6 +19,7 @@ Accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)*
 
 ## 📚 Recent News
 
+- **04/11/2025**: Our [paper](https://ojs.aaai.org/index.php/AAAI/article/view/32325) has been published in the AAAI 2025 proceedings.
 - **01/23/2025**: 🎉 One co-authored paper, VLSA, is accepted by *[ICLR 2025](https://openreview.net/forum?id=trj2Jq8riA)*. Refer to its [code](https://github.com/liupei101/VLSA) & [paper](https://arxiv.org/abs/2409.09369) for more details. Congratulations to [Pei Liu](https://liupei101.github.io).
 - **12/15/2024**: Update our prepared [dataset](https://pan.baidu.com/s/1DB83xR7HBw4eS9WxlRJN6g?pwd=4yri) to facilitate direct **online viewing of the dataset's file organization** and allow for **on-demand downloading of specific files**.
 - **12/10/2024**: 🥳 Our QPMIL-VL is accepted by *[AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)* and its [code](https://github.com/can-can-ya/QPMIL-VL) & [paper](https://arxiv.org/abs/2410.10573) (containing **Supplementary Material**) are live.
@@ -84,9 +85,11 @@ If you find this work helps your research, please consider citing our [paper](ht
 @inproceedings{gou2025queryable,
   title={Queryable Prototype Multiple Instance Learning with Vision-Language Models for Incremental Whole Slide Image Classification},
   author={Gou, Jiaxiang and Ji, Luping and Liu, Pei and Ye, Mao},
-  booktitle={Proceedings of the AAAI conference on artificial intelligence},
-  year={2025},
-  url={https://arxiv.org/abs/2410.10573}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={3},
+  pages={3158--3166},
+  year={2025}
 }
 ```
 
